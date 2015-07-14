@@ -27,8 +27,8 @@ public class HelloYunxin {
 		headers.put("CheckSum", rh.genCheckSum());
 		
 		Map<String, String> data = new HashMap<String, String>();
-		data.put("accid", "user33");
-		data.put("name", "test333");
+		data.put("accid", "temp@zhangmin.name");
+		data.put("name", "zhangmin.name");
 		String response = HttpRequest.post(URL)
 				.headers(headers)
 				.contentType("application/x-www-form-urlencoded;charset=utf-8")

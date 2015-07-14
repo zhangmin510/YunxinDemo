@@ -28,7 +28,7 @@ public class RequestHeader {
 		sb.append(SECRET_KEY).append(this.nonce).append(this.curTime);
 		try {
 			MessageDigest md = MessageDigest.getInstance("SHA-1");
-			md.digest(sb.toString().getBytes());
+			md.update(sb.toString().getBytes());
 			this.checkSum = bytesToHexString(md.digest());
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
