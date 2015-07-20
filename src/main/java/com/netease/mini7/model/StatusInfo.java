@@ -10,7 +10,7 @@ package com.netease.mini7.model;
 public class StatusInfo {
 	private String code;
 	private String desc;
-	private String info;
+	private Info info;
 	private String status;
 	
 	public String getCode() {
@@ -21,11 +21,11 @@ public class StatusInfo {
 		this.code = code;
 	}
 
-	public String getInfo() {
+	public Info getInfo() {
 		return info;
 	}
 
-	public void setInfo(String info) {
+	public void setInfo(Info info) {
 		this.info = info;
 	}
 
@@ -44,6 +44,13 @@ public class StatusInfo {
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
+
+	@Override
+	public String toString() {
+		return "StatusInfo [code=" + code + ", desc=" + desc + ", info=" + info
+				+ ", status=" + status + "]";
+	}
+	
 	
 	
 }
