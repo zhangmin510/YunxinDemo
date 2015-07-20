@@ -20,7 +20,7 @@ import com.netease.mini7.service.YunxinApiList;
  * @author hzzhangmin2015
  *
  */
-public class YunXinAPIHelperTest {
+public class YunxinApiListTest {
 	@Test
 	public void testCreateUser() {
 		StatusInfo si = YunxinApiList.createUser("chenzz", "陈中正");
