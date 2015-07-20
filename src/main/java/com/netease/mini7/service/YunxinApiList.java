@@ -1,13 +1,13 @@
 /**
  * 
  */
-package com.netease.mini7;
+package com.netease.mini7.service;
 
 /**
  * @author hzzhangmin2015
  *
  */
-public class YunXinAPI {
+public class YunxinApiList {
 	
 	public static final String CREATE_USER = 
 			"https://api.netease.im/nimserver/user/create.action";

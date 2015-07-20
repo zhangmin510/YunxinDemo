@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.netease.mini7;
+package com.netease.mini7.service;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -15,16 +15,12 @@ import com.github.kevinsawicki.http.HttpRequest;
  * @author hzzhangmin2015
  *
  */
-public class YunXinAPIHelper {
+public class YunxinApiHelper {
 	public static final String APP_KEY = "65a84d826808943006997f3504e1ee0f";
 	public static final String SECRET_KEY = "8caea6f2170b";
 	private String nonce;
 	private String curTime;
 	private String checkSum;
-	
-	public YunXinAPIHelper() {
-		
-	}
 	
 	public String invoke(String api, Map<String, String> data) {
 		this.curTime = Long.toString(System.currentTimeMillis() / 1000);
@@ -72,30 +68,5 @@ public class YunXinAPIHelper {
 	        stringBuilder.append(hv);   
 	    }   
 	    return stringBuilder.toString();   
-	}   
-
-	public String getNonce() {
-		return nonce;
 	}
-
-	public void setNonce(String nonce) {
-		this.nonce = nonce;
-	}
-
-	public String getCurTime() {
-		return curTime;
-	}
-
-	public void setCurTime(String curTime) {
-		this.curTime = curTime;
-	}
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }
