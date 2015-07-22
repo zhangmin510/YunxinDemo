@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.netease.mini7.service;
 
 import java.util.HashMap;
@@ -9,11 +6,23 @@ import java.util.Map;
 import com.netease.mini7.model.StatusInfo;
 
 /**
- * @author hzzhangmin2015
+ * 
+ * @ClassName: YunxinApiList 
+ * @Description: 云信API封装列表
+ * @author chenzhongzheng && zhangmin
  *
  */
 public class YunxinApiList {
-		//创建账号
+		/**
+		 * 
+		 * @Title: createUser 
+		 * @Description: 创建用户
+		 * @param @param accid
+		 * @param @param name
+		 * @param @return
+		 * @return StatusInfo
+		 * @throws
+		 */
 		public static StatusInfo createUser(String accid, String name) {
 			Map<String, String> account = new HashMap<String, String>();
 			account.put("accid", accid);
@@ -23,7 +32,16 @@ public class YunxinApiList {
 			return si;
 		}
 		
-		//账号更新
+		/**
+		 * 
+		 * @Title: updateUser 
+		 * @Description: 更新用户资料
+		 * @param @param accid
+		 * @param @param name
+		 * @param @return
+		 * @return StatusInfo
+		 * @throws
+		 */
 		public static StatusInfo updateUser(String accid, String name) {
 			Map<String, String> account = new HashMap<String, String>();
 			account.put("accid", accid);
@@ -33,7 +51,19 @@ public class YunxinApiList {
 			return si;
 		}
 		
-		//发送普通消息
+		/**
+		 * 
+		 * @Title: sendMsg 
+		 * @Description: 发送消息
+		 * @param @param from
+		 * @param @param ope
+		 * @param @param to
+		 * @param @param type
+		 * @param @param body
+		 * @param @return
+		 * @return StatusInfo
+		 * @throws
+		 */
 		public static StatusInfo sendMsg(String from, String ope, String to, String type, String body) {
 			Map<String, String> map = new HashMap<String, String>();
 			map.put("from", from);
@@ -46,7 +76,18 @@ public class YunxinApiList {
 			return si;
 		}
 		
-		//发送透传消息
+		/**
+		 * 
+		 * @Title: sendAttachMsg 
+		 * @Description: TODO 
+		 * @param @param from
+		 * @param @param msgtype
+		 * @param @param to
+		 * @param @param attach
+		 * @param @return
+		 * @return StatusInfo
+		 * @throws
+		 */
 		public static StatusInfo sendAttachMsg(String from, String msgtype, String to, String attach)  {
 			Map<String, String> map = new HashMap<String, String>();
 			map.put("from", from);

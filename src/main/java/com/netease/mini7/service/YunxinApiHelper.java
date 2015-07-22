@@ -14,7 +14,10 @@ import com.github.kevinsawicki.http.HttpRequest;
 import com.netease.mini7.model.StatusInfo;
 
 /**
- * @author hzzhangmin2015
+ * 
+ * @ClassName: YunxinApiHelper 
+ * @Description: 云信API封装类
+ * @author chenzhongzheng && zhangmin
  *
  */
 public class YunxinApiHelper {

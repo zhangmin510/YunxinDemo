@@ -1,8 +1,9 @@
 package com.netease.mini7.model;
 
-
 /**
  * 
+ * @ClassName: Info 
+ * @Description: 云信API返回值的实体类
  * @author chenzhongzheng
  *
  */

@@ -4,7 +4,10 @@
 package com.netease.mini7.model;
 
 /**
- * @author hzzhangmin2015
+ * 
+ * @ClassName: StatusInfo 
+ * @Description: 云信API返回值实体类
+ * @author chenzhongzheng && zhangmin
  *
  */
 public class StatusInfo {

@@ -17,7 +17,10 @@ import com.netease.mini7.service.YunxinApiHelper;
 import com.netease.mini7.service.YunxinApiList;
 
 /**
- * @author hzzhangmin2015
+ * 
+ * @ClassName: YunxinApiListTest 
+ * @Description: 云信API单元测试
+ * @author chenzhongzheng
  *
  */
 public class YunxinApiListTest {
